@@ -1,0 +1,16 @@
+[package]
+name = "example-0"
+version = "0.0.1"
+authors = [ "Alex Eubanks <endeavor@rainbowsandpwnies.com>" ]
+description = "A Finch example"
+license = "Apache-2.0"
+
+[dependencies]
+error-chain = "0.12"
+falcon = "0.4.2"
+falcon-finch = { git="https://github.com/falconre/finch", rev="5ad7196f30497ee857fbd5" }
+
+
+[[bin]]
+name = "example-0"
+path = "src/main.rs"
